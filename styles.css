@@ -1,0 +1,86 @@
+/* Estilos simples (nivel L1) */
+:root{
+  --bg:#04121a;
+  --panel:#0a2230;
+  --ink:#e5e7eb;
+  --muted:#9ca3af;
+  --brand:#0ea5e9;
+  --accent:#22d3ee;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  background:radial-gradient(1200px 600px at 20% -10%,rgba(34,211,238,.15),transparent 60%), linear-gradient(180deg,var(--bg),#061821 65%);
+  color:var(--ink);
+}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.topbar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+  padding:1rem 1.25rem;
+  background:linear-gradient(90deg,#0b7da3,var(--brand));
+  color:white;
+  position:sticky;
+  top:0;
+}
+h1{font-size:1.2rem;margin:0}
+.actions{display:flex;gap:.5rem;align-items:center}
+.actions input{
+  width:210px;
+  max-width:48vw;
+  background:#082030;
+  color:var(--ink);
+  border:1px solid #114b63;
+  border-radius:10px;
+  padding:.55rem .7rem;
+}
+.container{max-width:1100px;margin:1rem auto;padding:0 1rem}
+.card{
+  background:var(--panel);
+  border:1px solid #12384b;
+  border-radius:16px;
+  padding:1rem;
+  box-shadow:0 6px 14px rgba(0,0,0,.25);
+}
+h2{margin:.25rem 0 1rem;font-size:1.05rem}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(180px,1fr));
+  gap:.75rem;
+}
+.cardx{
+  background:#082030;
+  border:1px solid #10384d;
+  border-radius:14px;
+  padding:.6rem;
+  display:grid;
+  gap:.35rem;
+}
+.cardx img{
+  width:100%;
+  aspect-ratio:1/1;
+  object-fit:cover;
+  border-radius:10px;
+  border:1px solid #134b62;
+}
+.title{display:flex; align-items:center; justify-content:space-between; gap:.5rem}
+.title h3{margin:0;font-size:1rem}
+.badge{font-size:.7rem;background:#0b7da3;color:white;padding:.15rem .4rem;border-radius:6px}
+.meta{font-family:'JetBrains Mono',monospace;font-size:.75rem;color:var(--muted)}
+.btn{
+  background:#0b7da3;
+  color:white;
+  border:none;
+  padding:.55rem .9rem;
+  border-radius:10px;
+  cursor:pointer;
+}
+.btn:hover{opacity:.95}
+.pager{display:flex;justify-content:center;gap:.5rem;margin-top:1rem}
+.status{color:var(--muted);margin-bottom:.75rem;font-size:.9rem}
+.footer{ text-align:center;color:var(--muted);padding:2rem 1rem 3rem;font-size:.9rem}
